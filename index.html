@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="heading">
+        <img src="logo.png" alt="Logo" width="70px" />
+        <h1>Sticky Notes</h1>
+      </div>
+      <br />
+      <div class="modal">
+        <div id="newNoteDialog">
+          <br />
+          <div class="editButtons">
+            <button data-command="bold" class="editorButtons">Bold</button>
+            <button data-command="underline" class="editorButtons">
+              Underline
+            </button>
+            <button id="copy">Copy</button>
+            <button class="save">Save</button>
+            <button class="discard">Discard</button>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <p contenteditable="true" id="text"></p>
+        </div>
+      </div>
+      <br /><br />
+      <div class="newNote">
+        <button id="addNote"><span>Add Note</span></button>
+      </div>
+      <br />
+
+      <h3>Recent Notes</h3>
+      <div class="para"></div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

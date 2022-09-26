@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+}
+
+.heading {
+  text-align: center;
+  background-color: #9400d3;
+  color: white;
+  margin: -30px -30px -10px -30px;
+  padding: 10px;
+}
+
+#addNote {
+  color: white;
+  background-color: #9400d3;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 12px;
+  border-color: #9400d3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.newNote {
+  text-align: center;
+}
+
+#addNote:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.4s;
+}
+
+.borders {
+  font-size: large;
+  border-style: solid;
+  border-radius: 12px;
+  border-color: #9400d3;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.dummy:hover {
+  color: white;
+  background-color: #9400d3;
+  box-shadow: 0 12px 16px 12px rgba(0, 0, 0, 0.24),
+    0 17px 50px 17px rgba(0, 0, 0, 0.19);
+  transition-duration: 0.5s;
+}
+
+.para {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.para p:nth-child(1) {
+  margin: 10px;
+}
+
+hr {
+  border-style: solid;
+  border-color: #9400d3;
+  height: 2px;
+  border-radius: 12px;
+  background-color: #9400d3;
+}
+
+#newNoteDialog {
+  text-align: center;
+  margin: auto;
+  height: 40vh;
+  width: 80vw;
+  border-style: solid;
+  border-color: #9400d3;
+  border-radius: 12px;
+  display: none;
+  font-size: 1rem;
+}
+
+#text {
+  height: 75%;
+  padding: 20px;
+  text-align: left;
+  border-color: none;
+  outline: 0px solid transparent;
+}
+
+dialog::backdrop {
+  background-color: #673ab752;
+}
+
+.editorButtons,
+#copy,
+.save,
+.discard {
+  color: white;
+  background-color: #9400d3;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 12px;
+  border-color: #9400d3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.editorButtons:hover,
+#copy:hover,
+.save:hover,
+.discard:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.4s;
+}
